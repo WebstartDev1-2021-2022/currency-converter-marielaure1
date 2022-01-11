@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Une description de la page" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>Convertisseur<br />de monnaie</h1>
+    <form>
+        <label for="from-currencies"></label>
+        <select name="from-currencies" id="from-currencies">
+        <option value="aud">Australian Dollar (AUD)</option>
+        <option value="bgn">Bulgarian Lev (BGN)</option>
+        <option value="brl">Brazilian Real (BRL)</option>
+        </select>
+        <input type="number" name="from" id="from" placeholder="0,00" />
+
+        <button type="button" class="switch">
+            <i class="fas fa-sync-alt"></i>
+        </button>
+
+        <label for="to-currencies"></label>
+        <select name="to-currencies" id="to-currencies">
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="BGN">Bulgarian Lev (BGN)</option>
+            <option value="BRL">Brazilian Real (BRL)</option>
+        </select>
+        <input type="number" name="to" id="to" placeholder="0,00" />
+        
+        <input type="submit" value="Convertir" class="btn-convert" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+body {
+height: 100vh;
+background-image: url("./images/bg.jpg");
+background-position: center;
+background-size: cover;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+    & > h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4em;
+        color: #ffffff;
+    }
+
+    & > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #030b2e38;
+        backdrop-filter: blur(20px);
+        box-sizing: border-box;
+
+
+        & > select, & > input:not(:last-child){
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            height: 10%;
+            max-height: 100px;
+            width: 50%;
+        }
+
+        & > select {
+            background-color: rgb(240, 145, 20);
+            margin: 0 0 15px 0;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+
+            & > option{
+                background-color: #ffffff;
+                color: black;
+                font-size: 15px;
+            }
+        }
+
+        & > input:not(:last-child){
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        & > input::placeholder{
+            font-size: 18px;
+        }
+        
+
+        & > .switch, & > .btn-convert{
+            border: none;
+            outline: none;
+        }
+
+        & > .switch{
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            margin: 3% 0 3% 0;
+            
+            & > .fas{
+                font-size: 20px;
+                color: rgb(240, 145, 20);
+            }
+        }
+        
+        & > .btn-convert{
+            height: 8%;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(10, 10, 10);
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 5%;
+        }
+
+        & > .btn-convert:hover {
+            background-color: #ffffff;
+            color: rgb(240, 145, 20);
+        }
+    }
+}
