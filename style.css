@@ -123,4 +123,10 @@ body > form > .btn-convert:hover {
   background-color: #ffffff;
   color: #f09114;
 }
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */
