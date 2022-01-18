@@ -68,12 +68,14 @@ grid-template-columns: 1fr 1fr;
             height: 50px;
             width: 50px;
             border-radius: 25px;
-            background-color: #ffffff;
             margin: 3% 0 3% 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
-            & > .fas{
-                font-size: 20px;
-                color: rgb(240, 145, 20);
+            & > img{
+                height: 50%;
+                width: auto;
             }
         }
         
@@ -94,8 +96,53 @@ grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 900px){
     body{
         display: block;
+
+        & > h1{
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            font-size: 1.5em;
+            
+        }
+
+        & > form{
+            padding-top: 20%;
+
+            & > select, & > input:not(:last-child){
+                width: 80%;
+                max-width: 450px;
+                max-height: 200px;
+            }
+
+            & > select {
+                font-size: 0.7rem;
+    
+                & > option{
+                    font-size: 0.7rem;
+                }
+            }
+
+            & > input::placeholder{
+                font-size: 0.7rem;
+            }
+            
+    
+            & > .switch{
+                height: 30px;
+                width: 30px;
+                margin: 8% 0 8% 0;
+            }
+            
+            & > .btn-convert{
+                width: 40%;
+                font-size: 0.7rem;
+                margin-top: 10%;
+            }
+        } 
     }
 }

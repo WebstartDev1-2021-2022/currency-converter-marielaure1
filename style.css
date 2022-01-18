@@ -100,13 +100,21 @@ body > form > .switch {
   height: 50px;
   width: 50px;
   border-radius: 25px;
-  background-color: #ffffff;
   margin: 3% 0 3% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body > form > .switch > .fas {
-  font-size: 20px;
-  color: #f09114;
+body > form > .switch > img {
+  height: 50%;
+  width: auto;
 }
 
 body > form > .btn-convert {
@@ -124,9 +132,54 @@ body > form > .btn-convert:hover {
   color: #f09114;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   body {
     display: block;
+  }
+  body > h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 2;
+    font-size: 1.5em;
+  }
+  body > form {
+    padding-top: 20%;
+  }
+  body > form > select, body > form > input:not(:last-child) {
+    width: 80%;
+    max-width: 450px;
+    max-height: 200px;
+  }
+  body > form > select {
+    font-size: 0.7rem;
+  }
+  body > form > select > option {
+    font-size: 0.7rem;
+  }
+  body > form > input::-webkit-input-placeholder {
+    font-size: 0.7rem;
+  }
+  body > form > input:-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  body > form > input::-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  body > form > input::placeholder {
+    font-size: 0.7rem;
+  }
+  body > form > .switch {
+    height: 30px;
+    width: 30px;
+    margin: 8% 0 8% 0;
+  }
+  body > form > .btn-convert {
+    width: 40%;
+    font-size: 0.7rem;
+    margin-top: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
