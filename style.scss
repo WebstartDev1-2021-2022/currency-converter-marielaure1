@@ -11,7 +11,7 @@ grid-template-columns: 1fr 1fr;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 4em;
+        font-size: 3em;
         color: #ffffff;
     }
 
@@ -101,22 +101,21 @@ grid-template-columns: 1fr 1fr;
         display: block;
 
         & > h1{
-            position: absolute;
-            top: 5%;
-            left: 50%;
-            transform: translateX(-50%);
+            background-color: #030b2e38;
+            backdrop-filter: blur(20px);
+            height: 15%;
             z-index: 2;
             font-size: 1.5em;
             
         }
 
         & > form{
-            padding-top: 20%;
+            padding: 0%;
 
             & > select, & > input:not(:last-child){
-                width: 80%;
-                max-width: 450px;
-                max-height: 200px;
+                width: 40%;
+                height: 15%;
+                max-height: 50px;
             }
 
             & > select {
@@ -135,14 +134,34 @@ grid-template-columns: 1fr 1fr;
             & > .switch{
                 height: 30px;
                 width: 30px;
-                margin: 8% 0 8% 0;
+                margin: 30px 0 30px 0;
             }
             
             & > .btn-convert{
-                width: 40%;
+                width: 20%;
+                height: 5%;
                 font-size: 0.7rem;
-                margin-top: 10%;
+                margin-top: 5%;
             }
         } 
     }
+
+    @media (max-width: 500px){
+       body{
+        & > h1{
+            font-size: 1.5em;
+        }
+    
+        & > form{
+            padding: 0%;
+    
+            & > select, & > input:not(:last-child){
+                width: 80%;
+                max-width: 450px;
+                max-height: 70px;
+            }
+        }
+       }    
+    }
 }
+

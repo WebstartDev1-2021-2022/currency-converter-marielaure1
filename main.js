@@ -14,10 +14,7 @@ const switchCurrencies = (event) => {
 
   console.log("le bouton switch a été cliqué");
   [inputFrom.value, inputTo.value] = [inputTo.value, inputFrom.value];
-  [selectFromCurrencies.value, selectToCurrencies.value] = [
-    selectToCurrencies.value,
-    selectFromCurrencies.value,
-  ];
+  [selectFromCurrencies.value, selectToCurrencies.value] = [selectToCurrencies.value, selectFromCurrencies.value];
 };
 /**
  * Prend l'option sélectionnée d'un menu select et la désactive dans un deuxième menu select
