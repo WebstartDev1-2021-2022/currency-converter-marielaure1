@@ -22,6 +22,7 @@ body > h1 {
           justify-content: center;
   font-size: 3em;
   color: #ffffff;
+  text-align: center;
 }
 
 body > form {
@@ -145,7 +146,10 @@ body > form > .btn-convert:hover {
     font-size: 1.5em;
   }
   body > form {
-    padding: 0%;
+    padding: 7% 0 0 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   body > form > select, body > form > input:not(:last-child) {
     width: 40%;
@@ -186,9 +190,6 @@ body > form > .btn-convert:hover {
 @media (max-width: 900px) and (max-width: 500px) {
   body > h1 {
     font-size: 1.5em;
-  }
-  body > form {
-    padding: 0%;
   }
   body > form > select, body > form > input:not(:last-child) {
     width: 80%;
